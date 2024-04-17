@@ -13,7 +13,7 @@ import AddItem from "./components/addItem";
 
 // import UserDetails from './components/stateless-components/userDetails';
 // import HistoryNavigator from './components/stateless-components/historyNavigator';
-// import Calories from './components/stateless-components/calories';
+import Calories from './components/stateless-components/calories';
 // import DailyFoodList from './components/stateless-components/dailyFoodList';
 
 import DataPoints from "./assets/mockData/dataPoints";
@@ -353,7 +353,7 @@ class App extends Component {
               /> */}
                         </nav>
                         <article>
-                            {/* <Calories
+                            <Calories
                 consumed={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].total_calories}
                 dailyGoal={this.state.dailyGoal}
                 breakfastCalories={
@@ -362,7 +362,7 @@ class App extends Component {
                 lunchCalories={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].lunchCalories}
                 dinnerCalories={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].dinnerCalories}
                 snackCalories={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].snackCalories}
-              /> */}
+              />
                         </article>
                         <section>
                             {/* <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} /> */}
@@ -409,7 +409,7 @@ class App extends Component {
                         <section className="section">
                             <article className="sidebar">
                                 {/* <UserDetails /> */}
-                                {/* <Calories
+                                <Calories
                   consumed={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].total_calories}
                   dailyGoal={this.state.dailyGoal}
                   breakfastCalories={
@@ -418,7 +418,7 @@ class App extends Component {
                   lunchCalories={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].lunchCalories}
                   dinnerCalories={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].dinnerCalories}
                   snackCalories={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].snackCalories}
-                /> */}
+                />
                             </article>
                             <main className="main">
                                 {/* <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} /> */}
