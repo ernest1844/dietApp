@@ -1,41 +1,41 @@
 {
-  "name": "2hats-react-web-dev",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://mark-mansfield.github.io/react-calorie-calculator/",
-  "dependencies": {
-    "@material-ui/core": "^4.4.3",
-    "@material-ui/icons": "^4.4.3",
-    "axios": "^1.6.8",
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1",
-    "react-scripts": "^5.0.1",
-    "yarn": "^1.22.22"
-  },
-  "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts  --openssl-legacy-provider test",
-    "eject": "react-scripts --openssl-legacy-provider eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
-  }
+    "name": "2hats-react-web-dev",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://mark-mansfield.github.io/react-calorie-calculator/",
+    "dependencies": {
+        "@material-ui/core": "^4.4.3",
+        "@material-ui/icons": "^4.4.3",
+        "axios": "^1.6.8",
+        "lodash": "^4.17.15",
+        "moment": "^2.24.0",
+        "react": "^16.10.1",
+        "react-dom": "^16.10.1",
+        "react-scripts": "^5.0.1",
+        "yarn": "^1.22.22"
+    },
+    "scripts": {
+        "start": "react-scripts --openssl-legacy-provider start",
+        "build": "react-scripts --openssl-legacy-provider build",
+        "test": "react-scripts  --openssl-legacy-provider test",
+        "eject": "react-scripts --openssl-legacy-provider eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "gh-pages": "^2.1.1"
+    }
 }
