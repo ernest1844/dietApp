@@ -11,7 +11,7 @@ import Search from "./components/search";
 import SearchResults from "./components/searchResults";
 import AddItem from "./components/addItem";
 
-// import UserDetails from './components/stateless-components/userDetails';
+import UserDetails from './components/stateless-components/userDetails';
 // import HistoryNavigator from './components/stateless-components/historyNavigator';
 import Calories from './components/stateless-components/calories';
 // import DailyFoodList from './components/stateless-components/dailyFoodList';
@@ -344,7 +344,7 @@ class App extends Component {
                                 onSearch={this.handleSearch}
                                 focused={this.state.searchFocused}
                             />
-                            {/* <UserDetails /> */}
+                            <UserDetails />
                         </header>
                         <nav>
                             {/* {/* <HistoryNavigator
@@ -408,7 +408,7 @@ class App extends Component {
                         </header>
                         <section className="section">
                             <article className="sidebar">
-                                {/* <UserDetails /> */}
+                                <UserDetails />
                                 <Calories
                   consumed={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].total_calories}
                   dailyGoal={this.state.dailyGoal}
