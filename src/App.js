@@ -12,7 +12,7 @@ import SearchResults from "./components/searchResults";
 import AddItem from "./components/addItem";
 
 import UserDetails from './components/stateless-components/userDetails';
-// import HistoryNavigator from './components/stateless-components/historyNavigator';
+import HistoryNavigator from './components/stateless-components/historyNavigator';
 import Calories from './components/stateless-components/calories';
 // import DailyFoodList from './components/stateless-components/dailyFoodList';
 
@@ -347,10 +347,10 @@ class App extends Component {
                             <UserDetails />
                         </header>
                         <nav>
-                            {/* {/* <HistoryNavigator
+                            <HistoryNavigator
                 navigate={this.navigateHistory}
                 dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].date} 
-              /> */}
+              />
                         </nav>
                         <article>
                             <Calories
@@ -398,12 +398,12 @@ class App extends Component {
                             <Search
                                 onSearch={this.handleSearch}
                                 focused={this.state.searchFocused}
-                            />
+                            /> 
                             <nav>
-                                {/* <HistoryNavigator
+                                <HistoryNavigator
                   navigate={this.navigateHistory}
                   dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].date}
-                /> */}
+                />
                             </nav>
                         </header>
                         <section className="section">
