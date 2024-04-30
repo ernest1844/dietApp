@@ -14,7 +14,7 @@ import AddItem from "./components/addItem";
 import UserDetails from './components/stateless-components/userDetails';
 import HistoryNavigator from './components/stateless-components/historyNavigator';
 import Calories from './components/stateless-components/calories';
-// import DailyFoodList from './components/stateless-components/dailyFoodList';
+import DailyFoodList from './components/stateless-components/dailyFoodList';
 
 import DataPoints from "./assets/mockData/dataPoints";
 import "./App.css";
@@ -365,7 +365,7 @@ class App extends Component {
               />
                         </article>
                         <section>
-                            {/* <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} /> */}
+                            <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} />
                         </section>
                         {this.state.hasSearchResults && (
                             <SearchResults
@@ -421,7 +421,7 @@ class App extends Component {
                 />
                             </article>
                             <main className="main">
-                                {/* <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} /> */}
+                                <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} />
                             </main>
                             {this.state.hasSearchResults && (
                                 <SearchResults
