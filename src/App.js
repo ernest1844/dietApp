@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { debounce } from "lodash";
-// import Fab from '@material-ui/core/Fab';
-// import AddIcon from '@material-ui/icons/Add';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import moment from "moment";
@@ -383,9 +383,9 @@ class App extends Component {
                             />
                         )}
                         <div className="add-button">
-                            {/* <Fab aria-label="add" color="primary" onClick={this.handelFocusSearch}>
+                            <Fab aria-label="add" color="primary" onClick={this.handelFocusSearch}>
                 <AddIcon />
-              </Fab> */}
+              </Fab>
                         </div>
                     </div>
                 </ThemeProvider>
@@ -442,9 +442,9 @@ class App extends Component {
                             )}
                         </section>
                         <div className="add-button">
-                            {/* <Fab aria-label="add" color="primary" onClick={this.handelFocusSearch}>
+                            <Fab aria-label="add" color="primary" onClick={this.handelFocusSearch}>
                 <AddIcon />
-              </Fab> */}
+              </Fab>
                         </div>
                     </div>
                 </ThemeProvider>
