@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { debounce } from "lodash";
-// import Fab from '@material-ui/core/Fab';
-// import AddIcon from '@material-ui/icons/Add';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import moment from "moment";
@@ -12,9 +12,9 @@ import SearchResults from "./components/searchResults";
 import AddItem from "./components/addItem";
 
 import UserDetails from './components/stateless-components/userDetails';
-// import HistoryNavigator from './components/stateless-components/historyNavigator';
+import HistoryNavigator from './components/stateless-components/historyNavigator';
 import Calories from './components/stateless-components/calories';
-// import DailyFoodList from './components/stateless-components/dailyFoodList';
+import DailyFoodList from './components/stateless-components/dailyFoodList';
 
 import DataPoints from "./assets/mockData/dataPoints";
 import "./App.css";
@@ -347,10 +347,10 @@ class App extends Component {
                             <UserDetails />
                         </header>
                         <nav>
-                            {/* {/* <HistoryNavigator
+                            <HistoryNavigator
                 navigate={this.navigateHistory}
                 dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].date} 
-              /> */}
+              />
                         </nav>
                         <article>
                             <Calories
@@ -365,7 +365,7 @@ class App extends Component {
               />
                         </article>
                         <section>
-                            {/* <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} /> */}
+                            <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} />
                         </section>
                         {this.state.hasSearchResults && (
                             <SearchResults
@@ -383,9 +383,9 @@ class App extends Component {
                             />
                         )}
                         <div className="add-button">
-                            {/* <Fab aria-label="add" color="primary" onClick={this.handelFocusSearch}>
+                            <Fab aria-label="add" color="primary" onClick={this.handelFocusSearch}>
                 <AddIcon />
-              </Fab> */}
+              </Fab>
                         </div>
                     </div>
                 </ThemeProvider>
@@ -398,12 +398,12 @@ class App extends Component {
                             <Search
                                 onSearch={this.handleSearch}
                                 focused={this.state.searchFocused}
-                            />
+                            /> 
                             <nav>
-                                {/* <HistoryNavigator
+                                <HistoryNavigator
                   navigate={this.navigateHistory}
                   dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition].date}
-                /> */}
+                />
                             </nav>
                         </header>
                         <section className="section">
@@ -421,7 +421,7 @@ class App extends Component {
                 />
                             </article>
                             <main className="main">
-                                {/* <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} /> */}
+                                <DailyFoodList dailyIntake={this.state.dataPoints.data_points[this.state.intakeHistoryPosition]} />
                             </main>
                             {this.state.hasSearchResults && (
                                 <SearchResults
@@ -442,9 +442,9 @@ class App extends Component {
                             )}
                         </section>
                         <div className="add-button">
-                            {/* <Fab aria-label="add" color="primary" onClick={this.handelFocusSearch}>
+                            <Fab aria-label="add" color="primary" onClick={this.handelFocusSearch}>
                 <AddIcon />
-              </Fab> */}
+              </Fab>
                         </div>
                     </div>
                 </ThemeProvider>
